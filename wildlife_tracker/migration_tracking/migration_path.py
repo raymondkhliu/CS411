@@ -8,11 +8,13 @@ class MigrationPath:
                 destination: Habitat,
                 path_id: int,
                 start_location: Habitat,
+                species: str,
                 duration: Optional[int] = None) -> None:
         self.destination = destination
         self.duration = duration
         self.path_id = path_id
         self.start_location = start_location
+        self.species = species
 
     def get_migration_paths(self) -> list[MigrationPath]:
         pass
